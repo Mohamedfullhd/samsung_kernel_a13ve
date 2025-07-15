@@ -8,8 +8,8 @@ export ARCH=arm64
 
 export KCFLAGS=-w
 export CONFIG_SECTION_MISMATCH_WARN_ONLY=y
-export CONFIG_DRV_BUILD_IN=Y
+export CONFIG_DRV_BUILD_IN=y
+export WERROR_FLAGS=-Wno-error
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y a13ve_defconfig
-make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y CFLAGS="-Wno-unused-variable" -j16
-
+make -C $(pwd) O=$(pwd)/out KCFLAGS=-w WERROR_FLAGS=-Wno-error=unused-variable CONFIG_SECTION_MISMATCH_WARN_ONLY=y CFLAGS="-Wno-unused-variable" -j16
 cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
