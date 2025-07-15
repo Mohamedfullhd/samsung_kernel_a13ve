@@ -12,7 +12,6 @@ export CONFIG_DRV_BUILD_IN=y
 export WERROR_FLAGS=-Wno-error
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y a13ve_defconfig
 make -C $(pwd) O=$(pwd)/out KCFLAGS=-w CONFIG_SECTION_MISMATCH_WARN_ONLY=y CFLAGS="-Wno-unused-variable" -j16
-cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
 
 
 sudo apt-get install clang-format clang-tidy clang-tools clang clangd libc++-dev libc++1 libc++abi-dev libc++abi1 libclang-dev libclang1 liblldb-dev libllvm-ocaml-dev libomp-dev libomp5 lld lldb llvm-dev llvm-runtime llvm python3-clang -y
