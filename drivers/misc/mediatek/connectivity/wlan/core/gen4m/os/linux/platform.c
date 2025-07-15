@@ -107,39 +107,6 @@
  *                           P R I V A T E   D A T A
  *******************************************************************************
  */
-static const uint8_t *apucDebugNetdevState[] = {
-	(uint8_t *) DISP_STRING("NETDEV_UNKNOWN"),
-	(uint8_t *) DISP_STRING("NETDEV_UP"),
-	(uint8_t *) DISP_STRING("NETDEV_DOWN"),
-	(uint8_t *) DISP_STRING("NETDEV_REBOOT"),
-	(uint8_t *) DISP_STRING("NETDEV_CHANGE"),
-	(uint8_t *) DISP_STRING("NETDEV_REGISTER"),
-	(uint8_t *) DISP_STRING("NETDEV_UNREGISTER"),
-	(uint8_t *) DISP_STRING("NETDEV_CHANGEMTU"),
-	(uint8_t *) DISP_STRING("NETDEV_CHANGEADDR"),
-	(uint8_t *) DISP_STRING("NETDEV_GOING_DOWN"),
-	(uint8_t *) DISP_STRING("NETDEV_CHANGENAME"),
-	(uint8_t *) DISP_STRING("NETDEV_FEAT_CHANGE"),
-	(uint8_t *) DISP_STRING("NETDEV_BONDING_FAILOVER"),
-	(uint8_t *) DISP_STRING("NETDEV_PRE_UP"),
-	(uint8_t *) DISP_STRING("NETDEV_PRE_TYPE_CHANGE"),
-	(uint8_t *) DISP_STRING("NETDEV_POST_TYPE_CHANGE"),
-	(uint8_t *) DISP_STRING("NETDEV_POST_INIT"),
-	(uint8_t *) DISP_STRING("NETDEV_UNREGISTER_FINAL"),
-	(uint8_t *) DISP_STRING("NETDEV_RELEASE"),
-	(uint8_t *) DISP_STRING("NETDEV_NOTIFY_PEERS"),
-	(uint8_t *) DISP_STRING("NETDEV_JOIN"),
-	(uint8_t *) DISP_STRING("NETDEV_CHANGEUPPER"),
-	(uint8_t *) DISP_STRING("NETDEV_RESEND_IGMP"),
-	(uint8_t *) DISP_STRING("NETDEV_PRECHANGEMTU"),
-	(uint8_t *) DISP_STRING("NETDEV_CHANGEINFODATA"),
-	(uint8_t *) DISP_STRING("NETDEV_BONDING_INFO"),
-	(uint8_t *) DISP_STRING("NETDEV_PRECHANGEUPPER"),
-	(uint8_t *) DISP_STRING("NETDEV_CHANGELOWERSTATE"),
-	(uint8_t *) DISP_STRING("NETDEV_UDP_TUNNEL_PUSH_INFO"),
-	(uint8_t *) DISP_STRING("NETDEV_UNKNOWN"),
-	(uint8_t *) DISP_STRING("NETDEV_CHANGE_TX_QUEUE_LEN"),
-};
 
 /*******************************************************************************
  *                                 M A C R O S

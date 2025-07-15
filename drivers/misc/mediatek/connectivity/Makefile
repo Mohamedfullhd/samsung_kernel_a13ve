@@ -18,6 +18,7 @@
 #
 # Rissu changes on 23 October 2024
 #
+KBUILD_CFLAGS += -Wno-error=unused-variable
 TOP := $(srctree)/drivers/misc/mediatek/connectivity
 ifeq ($(TARGET_BUILD_VARIANT),)
 $(warning TARGET_BUILD_VARIANT is empty! Using default option.)
